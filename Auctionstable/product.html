@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assests/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="icon" href="assests/gallery/logo.png">
+    <title>Current-Auctions | AuctionsTable</title>
+</head>
+<body>
+<!-- nav start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container-lg">
+    
+    <a class="navbar-brand" href="webpage.html"><img src="assests/gallery/logo.png" alt="" width="40px" height="50px">AuctionsTable</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="webpage.html">Home</a>
+        </li>
+        <li class="nav-item dropdown" data-bs-hover="dropdown">
+          <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Auctions
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item active" href="product.html">All-Categories</a></li>
+            <li><a class="dropdown-item" href="furniture.html">Furniture</a></li>
+            <li><a class="dropdown-item" href="art-work.html">Art-work</a></li>
+            <li><a class="dropdown-item" href="jewellery.html">Jewellery</a></li>
+            <hr>
+            <li><a class="dropdown-item" href="finished-auction.html">Finished-Auctions</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+              <a class="nav-link dropdown-toggle" id="dropdownMenuButton1" href="#" showon="hover" data-hover="dropdown" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                <li><a class="dropdown-item" href="reviews.html">Reviews</a></li>
+              </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="disclaimer.html">Disclaimer</a>
+        </li>
+        <li class="nav-item end">
+          <a href="index.html"><button class="btn-1">LogOut</button></a>
+        </li>
+      </ul>
+     </div>
+  </div>
+</nav>
+<!-- nav end -->
+    <!-- main start -->
+    <div class="container-fluid margin-top">
+      <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-6 mb-5">
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  All Catigories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="furniture.html">Furniture</a></li>
+                  <li><a class="dropdown-item" href="art-work.html">Art-work</a></li>
+                  <li><a class="dropdown-item" href="jewellery.html">Jewellery</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="search-container col-lg-6 mb-5">
+              <input class="me-2" id="search" onkeyup="filter ()" type="text" placeholder="Search here">
+              <button type="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="row" id="product-list">
+          <div class="col col-lg-3 center mb-4 ps-1 pe-2">
+            <!-- card -->
+            <div class="card2 reveal" data-bs-toggle="modal" data-bs-target="#modal-F9" style="width: 17rem;">
+              <div class="content">
+                <h6 class="title">Polanco Dining Table</h6>
+                <h6 class="link"><b>Base Price: $679</b></h6>
+                <a href="#" class="link">Add Bid</a>
+              </div>
+              <img src="assests/gallery/img-F9.jpg" alt="">
+            </div>
+              <!-- modal -->
+              <div class="modal fade" id="modal-F9" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                    <div class="modal-header">
+                      <h5 class="gray">Add Bid</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="row">
+                      <div class="col col-lg-12">
+                        <img src="assests/gallery/img-F9.jpg" alt="" height="" width="">
+                        <h4 class="text-center">Polanco Dining Table</h4>
+                        <h5 class="text-center">Description</h5>
+                        <h6 class="text-center">This collection is artisan-crafted from natural materials with hand-applied finishes. Individual pieces may vary in color, pattern, shape, and texture, making each truly unique.</h6>
+                        <h5 class="text-center">Base price: $679</h5>
+                        <h5 class="text-center">Current Bid: $<span id="highestBid9">700</span></h5>  
+                          <div class="d-flex">            
+                            <input class="form-control me-2" type="number" id="bidAmount9" placeholder="Enter your bid amount">
+                            <button class="btn btn-1" onclick="placeBid(9)">Place Bid</button>
+                          </div>  
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col col-lg-3 center mb-4 ps-1 pe-2">
+            <!-- card -->
+            <div class="card2 reveal" data-bs-toggle="modal" data-bs-target="#modal-F10" style="width: 17rem;">
+              <div class="content">
+                <h6 class="title">Hayworth Bed</h6>
+                <h6 class="link"><b>Base Price: $999</b></h6>
+                <a href="#" class="link">Add Bid</a>
+              </div>
+              <img src="assests/gallery/img-F10.jpg" alt="">
+            </div>
+              <!-- modal -->
+              <div class="modal fade" id="modal-F10" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                    <div class="modal-header">
+                      <h5 class="gray">Add Bid</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="row">
+                      <div class="col col-lg-12">
+                        <img src="assests/gallery/img-F10.jpg" alt="" height="" width="">
+                        <h4 class="text-center">Hayworth Bed</h4>
+                        <h5 class="text-center">Description</h5>
+                        <h6 class="text-center">Frames are craftsman-built in America using cross-directional hardwood laminate certified by the Sustainable Forestry Initiative.
+                          Bed frame provides reliable mattress support with panels resting on wood braces.
+                          Lightly tapered block feet are hand-finished in a Fossil stain.
+                          Headboards contain dense foam made from partially plant-based material, padded with poly fibers.</h6>
+                        <h5 class="text-center">Base price: $999</h5>
+                        <h5 class="text-center">Current Bid: $<span id="highestBid10">1099</span></h5>  
+                          <div class="d-flex">            
+                            <input class="form-control me-2" type="number" id="bidAmount10" placeholder="Enter your bid amount">
+                            <button class="btn btn-1" onclick="placeBid(10)">Place Bid</button>
+                          </div>  
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col col-lg-3 center mb-4 ps-1 pe-2">
+          <!-- card -->
+          <div class="card2 reveal" data-bs-toggle="modal" data-bs-target="#modal-F11" style="width: 17rem;">
+            <div class="content">
+              <h6 class="title">Polanco Sideboard</h6>
+              <h6 class="link"><b>Base Price: $909</b></h6>
+              <a href="#" class="link">Add Bid</a>
+            </div>
+            <img src="assests/gallery/img-F11.jpg" alt="">
+          </div>
+            <!-- modal -->
+            <div class="modal fade" id="modal-F11" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-body">
+                  <div class="modal-header">
+                    <h5 class="gray">Add Bid</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="row">
+                    <div class="col col-lg-12">
+                      <img src="assests/gallery/img-F11.jpg" alt="" height="" width="">
+                      <h4 class="text-center">Polanco Sideboard</h4>
+                      <h5 class="text-center">Description</h5>
+                      <h6 class="text-center">WIDTH:	78.75",
+                        DEPTH:	19.75",
+                        HEIGHT:	29.5",
+                        WEIGHT:	256 LBS,
+                        HAS ADJUSTABLE SHELVES:	YES,
+                        HAS REMOVABLE SHELVES:	YES,
+                        CLEARANCE UNDER PIECE:	4".
+                        </h6>
+                      <h5 class="text-center">Base price: $909</h5>
+                      <h5 class="text-center">Current Bid: $<span id="highestBid11">1099</span></h5>  
+                        <div class="d-flex">            
+                          <input class="form-control me-2" type="number" id="bidAmount11" placeholder="Enter your bid amount">
+                          <button class="btn btn-1" onclick="placeBid(11)">Place Bid</button>
+                        </div>  
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col col-lg-3 center mb-4 ps-1 pe-2">
+          <!-- card -->
+          <div class="card2 reveal" data-bs-toggle="modal" data-bs-target="#modal-F12" style="width: 17rem;">
+            <div class="content">
+              <h6 class="title">Calista Bed</h6>
+              <h6 class="link"><b>Base Price: $900</b></h6>
+              <a href="#" class="link">Add Bid</a>
+            </div>
+            <img src="assests/gallery/img-F12.jpg" alt="">
+          </div>
+            <!-- modal -->
+            <div class="modal fade" id="modal-F12" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-body">
+                  <div class="modal-header">
+                    <h5 class="gray">Add Bid</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="row">
+                    <div class="col col-lg-12">
+                      <img src="assests/gallery/img-F12.jpg" alt="" height="" width="">
+                      <h4 class="text-center">Calista Bed</h4>
+                      <h5 class="text-center">Description</h5>
+                      <h6 class="text-center">Meet the perfect platform bed frame. Thoughtfully designed and available in multiple configurations to elevate any bedroom. All feature simple, tool-free assembly and include the low profile frame and extra strength cushion coated slats.</h6>
+                      <h5 class="text-center">Base price: $900</h5>
+                      <h5 class="text-center">Current Bid: $<span id="highestBid12">990</span></h5>  
+                        <div class="d-flex">            
+                          <input class="form-control me-2" type="number" id="bidAmount12" placeholder="Enter your bid amount">
+                          <button class="btn btn-1" onclick="placeBid(12)">Place Bid</button>
+                        </div>  
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col col-lg-3 center mb-4 ps-1 pe-2">
+          <!-- card -->
+          <div class="card2 reveal" data-bs-toggle="modal" data-bs-target="#modal-A5" style="width: 17rem;">
+           <div class="content">
+             <h6 class="title">Beautiful Abstract ArtWork</h6>
+             <h6 class="link"><b>Base Price: $599</b></h6>
+             <a href="#" class="link">Add Bid</a>
+           </div>
+           <img src="assests/gallery/img-A5.jpg" alt="">
+         </div>
+           <!-- modal -->
+           <div class="modal fade" id="modal-A5" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+               <div class="modal-content">
+                 <div class="modal-body">
+                 <div class="modal-header">
+                   <h5 class="gray">Add Bid</h5>
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="row">
+                   <div class="col col-lg-12">
+                     <img src="assests/gallery/img-A5.jpg" alt="" height="" width="">
+                     <h4 class="text-center">Beautiful Abstract ArtWork</h4>
+                     <h5 class="text-center">Description</h5>
+                     <h6 class="text-center">We strive to provide you the best, affordable prices with the highest quality canvas prints for your homes, office, and restaurants.
+
+                       Made with high-quality materials and rich textures, these quality canvases will last for years without fading or cracking.
+                       
+                       All our canvas prints are carefully printed, packed, and then quality delivered to you at your home or workplace.</h6>
+                     <h5 class="text-center">Base price: $599</h5>
+                     <h5 class="text-center">Current Bid: $<span id="highestBid5">689</span></h5>  
+                       <div class="d-flex">            
+                         <input class="form-control me-2" type="number" id="bidAmount5" placeholder="Enter your bid amount">
+                         <button class="btn btn-1" onclick="placeBid(5)">Place Bid</button>
+                       </div> 
+                   </div>
+                 </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+        </div>
+        <div class="col col-lg-3 center mb-4 ps-1 pe-2">
+           <!-- card -->
+           <div class="card2 reveal" data-bs-toggle="modal" data-bs-target="#modal-A6" style="width: 17rem;">
+             <div class="content">
+               <h6 class="title">Justin Chance | Past Due, 2022</h6>
+               <h6 class="link"><b>Base Price: $350</b></h6>
+               <a href="#" class="link">Add Bid</a>
+             </div>
+             <img src="assests/gallery/img-A6.jpg" alt="">
+           </div>
+           <!-- modal -->
+           <div class="modal fade" id="modal-A6" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+               <div class="modal-content">
+                 <div class="modal-body">
+                 <div class="modal-header">
+                   <h5 class="gray">Add Bid</h5>
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="row">
+                   <div class="col col-lg-12">
+                     <img src="assests/gallery/img-A6.jpg" alt="" height="" width="">
+                     <h4 class="text-center">Justin Chance |
+                       Past Due, 2022</h4>
+                     <h5 class="text-center">Description</h5>
+                     <h6 class="text-center">Quilted wet and needle felted wool, silk, cotton and dye
+                       41 × 68 in | 104.1 × 172.7 cm.</h6>
+                     <h5 class="text-center">Base price: $350</h5>
+                     <h5 class="text-center">Current Bid: $<span id="highestBid6">400</span></h5>  
+                       <div class="d-flex">            
+                         <input class="form-control me-2" type="number" id="bidAmount6" placeholder="Enter your bid amount">
+                         <button class="btn btn-1" onclick="placeBid(6)">Place Bid</button>
+                       </div>  
+                   </div>
+                 </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+        </div>
+        <div class="col  col-lg-3 center mb-4 ps-1 pe-2">
+           <!-- card -->
+           <div class="card2 reveal" data-bs-toggle="modal" data-bs-target="#modal-A7" style="width: 17rem;">
+             <div class="content">
+               <h6 class="title">Wall Art Work(beautiful Garden)</h6>
+               <h6 class="link"><b>Base Price: $330</b></h6>
+               <a href="#" class="link">Add Bid</a>
+             </div>
+             <img src="assests/gallery/img-A7.jpg" alt="">
+           </div>
+           <!-- modal -->
+           <div class="modal fade" id="modal-A7" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+               <div class="modal-content">
+                 <div class="modal-body">
+                 <div class="modal-header">
+                   <h5 class="gray">Add Bid</h5>
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="row">
+                   <div class="col col-lg-12">
+                     <img src="assests/gallery/img-A7.jpg" alt="" height="" width="">
+                     <h4 class="text-center">Wall Quality Art Work(beautiful Garden)</h4>
+                     <h5 class="text-center">Description</h5>
+                     <h6 class="text-center">artwork,printed on waterproof archival quality canvas.A perfect wall decorations art for living room,bedroom, kitchen,office,hotel,restaurant,dining room,office,bathroom,bar etc.</h6>
+                     <h5 class="text-center">Base price: $330</h5>
+                     <h5 class="text-center">Current Bid: $<span id="highestBid7">398</span></h5>  
+                       <div class="d-flex">            
+                         <input class="form-control me-2" type="number" id="bidAmount7" placeholder="Enter your bid amount">
+                         <button class="btn btn-1" onclick="placeBid(7)">Place Bid</button>
+                       </div> 
+                   </div>
+                 </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+        </div>
+        <div class="col col-lg-3 center mb-4 ps-1 pe-2">
+           <!-- card -->
+           <div class="card2 reveal" data-bs-toggle="modal" data-bs-target="#modal-A8" style="width: 17rem;">
+             <div class="content">
+               <h6 class="title">Abstract Map Artwork</h6>
+               <h6 class="link"><b>Base Price: $999</b></h6>
+               <a href="#" class="link">Add Bid</a>
+             </div>
+             <img src="assests/gallery/img-A8.jpg" alt="">
+           </div>
+           <!-- modal -->
+           <div class="modal fade" id="modal-A8" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+               <div class="modal-content">
+                 <div class="modal-body">
+                 <div class="modal-header">
+                   <h5 class="gray">Add Bid</h5>
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="row">
+                   <div class="col col-lg-12">
+                     <img src="assests/gallery/img-A8.jpg" alt="" height="" width="">
+                     <h4 class="text-center">Abstract Map Artwork</h4>
+                     <h5 class="text-center">Description</h5>
+                     <h6 class="text-center">Artwork,printed on waterproof archival quality canvas.A perfect wall decorations art for living room,bedroom, kitchen,office,hotel,restaurant,dining room,office,bathroom,bar etc.</h6>
+                     <h5 class="text-center">Base price: $999</h5>
+                     <h5 class="text-center">Current Bid: $<span id="highestBid8">1087</span></h5>  
+                       <div class="d-flex">            
+                         <input class="form-control me-2" type="number" id="bidAmount8" placeholder="Enter your bid amount">
+                         <button class="btn btn-1" onclick="placeBid(8)">Place Bid</button>
+                       </div>  
+                   </div>
+                 </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+        </div>
+        <div class="col col-lg-3 center mb-4 ps-1 pe-2">
+          <!-- card -->
+          <div class="card2 reveal" data-bs-toggle="modal" data-bs-target="#modal-J1" style="width: 17rem;">
+            <div class="content">
+              <h6 class="title">Smoky Enchantment Ring</h6>
+              <h6 class="link"><b>Base Price: $110</b></h6>
+              <a href="#" class="link">Add Bid</a>
+            </div>
+            <img src="assests/gallery/img-J1.jpg" alt="">
+          </div>
+          <!-- modal -->
+          <div class="modal fade" id="modal-J1" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-body">
+                <div class="modal-header">
+                  <h5 class="gray">Add Bid</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="row">
+                  <div class="col col-lg-12">
+                    <img src="assests/gallery/img-J1.jpg" alt="" height="" width="">
+                    <h4 class="text-center">Smoky Enchantment Ring</h4>
+                    <h5 class="text-center">Description</h5>
+                    <h6 class="text-center">Presenting the Smoky Enchantment Ring - a mesmerising allure in silver. This ring is expertly crafted and features enchanting zircon and smoky topaz stones, emanating a smoky charm. A captivating accessory that adds a touch of mystique and elegance to any woman's style.</h6>
+                    <h5 class="text-center">Base Price: $110</h5>
+                    <h5 class="text-center">Current Bid: $<span id="highestBid1">140</span></h5>  
+                      <div class="d-flex">            
+                        <input class="form-control me-2" type="number" id="bidAmount1" placeholder="Enter your bid amount">
+                        <button class="btn btn-1" onclick="placeBid(1)">Place Bid</button>
+                      </div> 
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-3 center mb-4 ps-1 pe-2">
+          <!-- card -->
+          <div class="card2 reveal" data-bs-toggle="modal" data-bs-target="#modal-J2" style="width: 17rem;">
+            <div class="content">
+              <h6 class="title">Sapphire Serenade Locket</h6>
+              <h6 class="link"><b>Base Price: $120</b></h6>
+              <a href="#" class="link">Add Bid</a>
+            </div>
+            <img src="assests/gallery/img-J2.jpg" alt="">
+          </div>
+          <!-- modal -->
+          <div class="modal fade" id="modal-J2" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-body">
+                <div class="modal-header">
+                  <h5 class="gray">Add Bid</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="row">
+                  <div class="col col-lg-12">
+                    <img src="assests/gallery/img-J2.jpg" alt="" height="" width="">
+                    <h4 class="text-center">Sapphire Serenade Locket</h4>
+                    <h5 class="text-center">Description</h5>
+                    <h6 class="text-center">Introducing the Sapphire Serenade Locket - an ode to elegance. Crafted in exquisite silver, this locket is adorned with captivating sapphire stones, exuding a serene and enchanting allure. A cherished keepsake to hold your most precious memories close to your heart.</h6>
+                    <h5 class="text-center">Base price: $120</h5>
+                    <h5 class="text-center">Current Bid: $<span id="highestBid2">130</span></h5>  
+                      <div class="d-flex">            
+                        <input class="form-control me-2" type="number" id="bidAmount2" placeholder="Enter your bid amount">
+                        <button class="btn btn-1" onclick="placeBid(2)">Place Bid</button>
+                      </div> 
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-3 center mb-4 ps-1 pe-2">
+          <!-- card -->
+          <div class="card2 reveal" data-bs-toggle="modal" data-bs-target="#modal-J3" style="width: 17rem;">
+            <div class="content">
+              <h6 class="title">Antique Silver Kara</h6>
+              <h6 class="link"><b>Base Price: $200</b></h6>
+              <a href="#" class="link">Add Bid</a>
+            </div>
+            <img src="assests/gallery/img-J3.jpg" alt="">
+          </div>
+          <!-- modal -->
+          <div class="modal fade" id="modal-J3" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-body">
+                <div class="modal-header">
+                  <h5 class="gray">Add Bid</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="row">
+                  <div class="col col-lg-12">
+                    <img src="assests/gallery/img-J3.jpg" alt="" height="" width="">
+                    <h4 class="text-center">Antique Silver Kara</h4>
+                    <h5 class="text-center">Description</h5>
+                    <h6 class="text-center">Silver Kara embodies beauty and craftsmanship. With its ruby, sapphire, and emerald stones, this kara blends vibrant colours and sterling silver brilliance. Ruby, sapphire, and emerald colours are carefully matched to create a beautiful symphony that draws attention. The kara's elaborate design and perfection make it a wonderful accent for formal and casual settings.</h6>
+                    <h5 class="text-center">Base price: $200</h5>
+                    <h5 class="text-center">Current Bid: $<span id="highestBid3">300</span></h5>  
+                      <div class="d-flex">            
+                        <input class="form-control me-2" type="number" id="bidAmount3" placeholder="Enter your bid amount">
+                        <button class="btn btn-1" onclick="placeBid(3)">Place Bid</button>
+                      </div> 
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-3 center mb-4 ps-1 pe-2">
+          <!-- card -->
+          <div class="card2 reveal" data-bs-toggle="modal" data-bs-target="#modal-J4" style="width: 17rem;">
+            <div class="content">
+              <h6 class="title">Subtle Gold Kara</h6>
+              <h6 class="link"><b>Base Price: $150</b></h6>
+              <a href="#" class="link">Add Bid</a>
+            </div>
+            <img src="assests/gallery/img-J4.jpg" alt="">
+          </div>
+          <!-- modal -->
+          <div class="modal fade" id="modal-J4" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-body">
+                <div class="modal-header">
+                  <h5 class="gray">Add Bid</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="row">
+                  <div class="col col-lg-12">
+                    <img src="assests/gallery/img-J4.jpg" alt="" height="" width="">
+                    <h4 class="text-center">Subtle Gold Kara</h4>
+                    <h5 class="text-center">Description</h5>
+                    <h6 class="text-center">The Subtle Gold Kara wristband exudes modest elegance and timeless beauty. This stunning kara blends gold's warmth with zircon stones' delicate brilliance for a sophisticated look. Each zircon stone is meticulously set in the Subtle Gold Kara to capture and reflect light. The golden setting intensifies the luminosity, providing a beautiful colour and luxury mix.</h6>
+                    <h5 class="text-center">Base price: $150</h5>
+                    <h5 class="text-center">Current Bid: $<span id="highestBid4">200</span></h5>  
+                      <div class="d-flex">            
+                        <input class="form-control me-2" type="number" id="bidAmount4" placeholder="Enter your bid amount">
+                        <button class="btn btn-1" onclick="placeBid(4)">Place Bid</button>
+                      </div> 
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+      </div> 
+        <div class="row">
+          <div class="col col-lg-12">
+          <ul class="pagination justify-content-center">
+              <li class="page-item disabled" >
+                  <a href="#" class="page-link" disabled><span aria-hidden="true">&laquo;</span></a>
+              </li>
+              <li class="page-item active">
+                  <a href="product.html" class="page-link">1</a>
+              </li>
+              <li class="page-item">
+                  <a href="product2.html" class="page-link">2</a>
+              </li>
+              <li class="page-item">
+                  <a href="product3.html" class="page-link">3</a>
+              </li>
+              <li class="page-item">
+                  <a href="product2.html" class="page-link"><span aria-hidden="true">&raquo;</span></a>
+              </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main end -->
+ <!-- footer start -->
+ <div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="con1">
+        <img src="assests/gallery/image.jpg" alt="">
+        <div class="box-2 text-center">
+          <h1 class="light-gray">Join our Newsletter!</h1>
+          <p class="light-gray">Subscribe to Get the Latest News About Us!</p>
+          <form class="d-flex">
+            <input class="form-control me-2" type="email" placeholder="Enter your email">
+            <button class="btn btn-1" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer bg-black">
+<div class="container-fluid">
+<div class="container">
+  <div class="row center">
+    <div class="col col-lg-3 center mt-5 mb-3">
+        <div class="card bg-tr" style="width: 15rem;">
+          <a class="navbar-brand light-gray" href="webpage.html"><img src="assests/gallery/logo.png" alt="" width="50px" height="55px">AuctionsTable</a>
+          <p class="gray">Explore exclusive bids, unique and rare finds, and unforgettable experiences.</p>
+          <div class="icon">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+    </div>
+    <div class="col col-lg-3 center margintop">
+        <div class="card bg-tr" style="width: 15rem;">
+          <h3 class="gray ps-3">Company</h3>
+          <ul>
+            <li><a href="webpage.html">Home</a></li>
+            <li><a href="product.html">Avalible-Auctions</a></li>
+            <li><a href="finished-auction.html">Finished-Auctions</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+    </div>
+    <div class="col col-lg-3 center margintop">
+        <div class="card bg-tr" style="width: 15rem;">
+          <h3 class="gray ps-3">About</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+    </div>
+    <div class="col col-lg-2 center margintop">
+        <div class="card bg-tr" style="width: 15rem;">
+          <h3 class="gray ps-3">Contact</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>           
+          </ul>
+        </div>
+
+    </div>
+  </div>
+</div>
+</div>
+<hr>
+<div class="container">
+  <div class="row text-center">
+    <div class="col col-lg-12">
+      <p class="gray">© 2024 AuctionsTable. All rights reserved.</p>
+    </div>
+  </div>
+</div>
+</div>
+<!-- footer end -->
+
+  <script src="assests/js/bootstrap.bundle.js"></script>
+  <script src="assests/js/script.js"></script>
+</body>
